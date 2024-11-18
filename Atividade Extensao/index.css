@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#card-produtos {
+    display: flex; /* Alinha os cards horizontalmente */
+    flex-wrap: wrap; /* Permite quebra para próxima linha */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+.produto {
+    flex: 1 1 calc(25% - 40px); /* Ocupa 25% por card */
+    max-width: 300px; /* Limita a largura máxima */
+    min-width: 200px; /* Define largura mínima */
+    border: 1px solid #ddd; /* Adiciona borda aos cards */
+    border-radius: 8px; /* Arredonda bordas */
+    overflow: hidden; /* Garante que elementos não escapem do card */
+    margin: 10px; /* Espaço entre os cards */
+    background-color: white;
+    padding: 5px;
+}
+
+.produto img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Corta ou ajusta imagem sem distorção */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+.card-body {
+    margin-left: 15px;
+    text-align: left; /* Centraliza o texto */
+}
+
+.nome-preco p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.botao-compra {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #809c7c;
+    border: #809c7c;
+    border-radius: 5px;
+}
+
+.botao-compra i {
+    cursor: pointer;
+    color: white;
+}
+
+.botao-compra input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 3px;
+}
